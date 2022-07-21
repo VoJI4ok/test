@@ -1,0 +1,74 @@
+.list {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages {
+  padding-bottom: 60px;
+  background: #FFF5F6;
+}
+
+.advantages_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages_title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+  margin-bottom: 4px;
+  margin-top: 16px;
+}
+
+.cow::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/599/599502.png");
+}
+
+.apple::before {
+  background-image: url(./images/apple.png);
+}
+
+.heart::before {
+  background-image: url(./images/heart.png);
+}
+
+.advantages_text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 20px */
+  color: #000000;
+}
+
+.advantages_item {
+  margin-right: 22px;
+}/*# sourceMappingURL=main.css.map */
