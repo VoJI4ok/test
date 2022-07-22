@@ -45,17 +45,33 @@ h6 {
   color: #D41443;
   margin-bottom: 4px;
   margin-top: 16px;
+  position: relative;
 }
 
 .cow::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+  position: absolute;
   background-image: url("https://cdn-icons-png.flaticon.com/512/599/599502.png");
 }
 
 .apple::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+  position: absolute;
   background-image: url(./images/apple.png);
 }
 
 .heart::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+  position: absolute;
   background-image: url(./images/heart.png);
 }
 
