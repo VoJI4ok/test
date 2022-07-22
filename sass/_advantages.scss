@@ -28,28 +28,32 @@ position: relative;
 
 .cow::before{
     content: '';
-    width: 100px;
-    height: 100px;
-    background-size: 100px 100px;
+    top: -66px;
+
+    width: 33px;
+    height: 50px;
+    background-size: 33px 50px;
     position: absolute;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/599/599502.png");
+    background-image: url(../images/cow.png);
 }
 .apple::before{
     content: '';
-    width: 100px;
-    height: 100px;
-    background-size: 100px 100px;
+    top: -66px;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
     position: absolute;
-    background-image: url(./images/apple.png);
+    background-image: url(../images/apple.png);
 }
 
 .heart::before{
     content: '';
-    width: 100px;
-    height: 100px;
-    background-size: 100px 100px;
+    top: -66px;
+    width: 44px;
+    height: 50px;
+    background-size: 44px 50px;
     position: absolute;
-    background-image: url(./images/heart.png);
+    background-image: url(../images/heart.png);
 }
 
 .advantages_text{
@@ -66,4 +70,5 @@ color: #000000;
 
 .advantages_item{
     margin-right: 22px;
+    margin-top: 98px;
 }
