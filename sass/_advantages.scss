@@ -8,7 +8,19 @@
 
 .advantages_list{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    gap: 32px;
+    @media screen and (min-width: 768px) {
+       flex-wrap: nowrap;
+       flex-direction: row;
+       gap: 22px;
+
+      }
+      @media screen and (min-width:1200px){
+    gap: 115px;
+    }
+  
 }
 
 .advantages_title{
@@ -21,20 +33,37 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #D41443;
 margin-bottom: 4px;
-margin-top: 16px;
 position: relative;
 
+height: 56px;
+@media screen and (min-width: 768px) {
+    margin-bottom: 13px;
+    font-size: 48px;
+line-height: 1.14;
+text-transform: none;
+   }
+@media screen and (min-width:1200px){
+    margin-bottom: 16px;
+    font-size: 58px;
+line-height: 1.13;
+height: 65px;
+}
 }
 
 .cow::before{
     content: '';
     top: -66px;
-
     width: 33px;
     height: 50px;
     background-size: 33px 50px;
     position: absolute;
     background-image: url(../images/cow.png);
+    @media screen and (min-width: 768px) {
+        top: -86px;
+       }
+       @media screen and (min-width:1200px){
+        top: -90px;
+       }
 }
 .apple::before{
     content: '';
@@ -44,6 +73,12 @@ position: relative;
     background-size: 50px 50px;
     position: absolute;
     background-image: url(../images/apple.png);
+     @media screen and (min-width: 768px) {
+        top: -86px;
+       }
+       @media screen and (min-width:1200px){
+        top: -90px;
+       }
 }
 
 .heart::before{
@@ -54,6 +89,12 @@ position: relative;
     background-size: 44px 50px;
     position: absolute;
     background-image: url(../images/heart.png);
+    @media screen and (min-width: 768px) {
+        top: -86px;
+       }
+       @media screen and (min-width:1200px){
+        top: -90px;
+       }
 }
 
 .advantages_text{
@@ -64,11 +105,38 @@ font-size: 12px;
 line-height: 20px;
 /* or 20px */
 color: #000000;
-
+width: 220px;
+@media screen and (min-width: 768px) {
+    width: 162px;
+    font-size: 14px;
+line-height: 174%;
+   }
+   @media screen and (min-width:1200px){
+    font-size: 16px;
+   line-height: 176%;
+   /* or 28px */
+   letter-spacing: 0.02em;
+   width: 288px;
+}
 }
 
 
 .advantages_item{
-    margin-right: 22px;
-    margin-top: 98px;
+    margin-top: 66px;
+    &:first-child{
+margin-top: 106px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 146px;
+        &:first-child{
+            margin-top: 146px;
+                }
+       }
+       @media screen and (min-width:1200px){
+     width: 100%;
+     margin-top: 211px;
+     &:first-child{
+        margin-top: 211px;
+            }
+}
 }
